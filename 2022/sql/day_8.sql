@@ -7,7 +7,7 @@ CREATE SERVER advent_of_code FOREIGN DATA WRAPPER file_fdw;
 CREATE FOREIGN TABLE tree_heights (
  tree_row text
 ) SERVER advent_of_code
-OPTIONS (filename '../../data/tree_heights.txt');
+OPTIONS (filename '../../sample/tree_heights.txt');
 
 CREATE TABLE forest AS
 WITH
